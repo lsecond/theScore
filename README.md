@@ -2,7 +2,7 @@
 
 This project was written by java and selenium web driver. 
 
-tested on 
+Tested on 
 windows: Chrome(64 bit, 52.0.2743.116), Firefox(46.0.1) and IE(11.0.34) 
 osx:     Chrome(64 bit, 52,0.2743.116), Safari 9.1.1(11601.6.17) 
 
