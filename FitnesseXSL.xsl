@@ -5,8 +5,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
   <html>
   <body>
-  	<img src="http://whofmjlfacz:8080/view/VaaS/job/VaaS_UI_BuildValidation_Test/ws/fitnesse-logo-small.jpg" alt="Fitnesse Logo"/>
-    <h2>Fitnesse  Test</h2>
+  	 <h2>Fitnesse  Test</h2>
     <table border="1">
       <tr bgcolor="#9acd32">
       	<th>Test Results</th>
