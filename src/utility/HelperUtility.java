@@ -45,7 +45,9 @@ public class HelperUtility {
 	
 	
 
-	
+	/**
+	 * disable screen saver
+	 */
 	public static void disableScreenSaver() {
 		screenSaverDisabler = new Timer();
 		screenSaverDisabler.scheduleAtFixedRate(new TimerTask() {
@@ -67,7 +69,10 @@ public class HelperUtility {
 			}
 		}, 0, 59 * 1000);
 	}
-
+	/**
+	 * put thread on sleep 
+	 * @param time
+	 */
 	public void sleep(long time) {
 		try {
 			Thread.sleep(time);

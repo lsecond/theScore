@@ -17,7 +17,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
@@ -28,9 +27,9 @@ import fit.ColumnFixture;
 /**
  * @author John L
  * @version 1.0
- * @since 02/01/2016
+ * @since 08/17/2016
  * 
- *        create a application in Originator system
+ *        theScore QA Automation Challenge
  */
 public class PlayerTest extends ColumnFixture {
 
@@ -46,19 +45,12 @@ public class PlayerTest extends ColumnFixture {
 	private Boolean isPlayerInfomationExist = false;
 	private Boolean isPlayerHeightFormatRight = false;
 	private Boolean isPlayerBirthdayFormatRight = false;
-
 	private static final long PAUSE_TIME = 3000;
 	private static final long PAGE_TIME = 50;
-	private static final long FINAL_TIME = 5000;
 	private int timeOut;
-
-	// define sub script for each page.
-
 	private HelperUtility helper;
-
 	private MainPage mainPage;
 	private EPLSoccer eplSoccer;
-
 	private static final String THESCORE = "http://www.thescore.com/";
 
 	public String CHROME_DRIVER;
@@ -69,6 +61,12 @@ public class PlayerTest extends ColumnFixture {
 	public SortedMap<String, List<String>> currencymap = new TreeMap<String, List<String>>();
 	public Logger log = Logger.getRootLogger();
 
+	/**
+	 * setup init URL
+	 * 
+	 * @param url
+	 * the web address begin with.
+	 */
 	public void setTestEnv(String url) {
 		this.testEnv = url;
 		log.info("test env : " + this.testEnv);
@@ -85,30 +83,49 @@ public class PlayerTest extends ColumnFixture {
 		log.info(this.browserType);
 	}
 
+	/**
+	 * setup workspace
+	 * 
+	 * @param loc
+	 */
 	public void setHomeLocation(String loc) {
 		this.homeLocation = loc;
 	}
-	
+
+	/**
+	 * setup running platform e.g.: mac or windows
+	 * 
+	 * @param testPlatform
+	 */
 	public void setTestPlatform(String testPlatform) {
 		this.testPlatform = testPlatform;
 	}
-	
 
+	/**
+	 * setup main page url
+	 * 
+	 * @param mainPageurl
+	 */
 	public void setMainPageURL(String mainPageurl) {
 		this.URL = mainPageurl;
 		log.info(this.URL);
 	}
 
+	/**
+	 * setup sport game
+	 * 
+	 * @param sport
+	 */
 	public void setSport(String sport) {
 		this.sport = sport;
 		log.info(this.sport);
 	}
 
 	/**
-	 * FITNESSE: Set time out
+	 * Set time out
 	 * 
 	 * @param timeOut
-	 *            Given time out
+	 * 
 	 */
 	public void setTimeOut(String timeOut) {
 		if (timeOut != null)
@@ -118,20 +135,20 @@ public class PlayerTest extends ColumnFixture {
 	}
 
 	/**
-	 * Quit browser driver
+	 * close webdriver
 	 * 
+	 * @return
 	 */
 	public boolean tearDown() {
 		if (driver != null) {
 			driver.close();
 			driver.quit();
 		}
-		// System.exit(1);
 		return true;
 	}
 
 	/**
-	 * main process for ems test
+	 * environment setup
 	 * 
 	 * @return
 	 */
@@ -142,17 +159,16 @@ public class PlayerTest extends ColumnFixture {
 			helper = new HelperUtility();
 			HelperUtility.disableScreenSaver();
 			HelperUtility.driverType = browserType;
-			if(this.testPlatform.equalsIgnoreCase("windows")){
+			if (this.testPlatform.equalsIgnoreCase("windows")) {
 				CHROME_DRIVER = this.homeLocation + "/chromedriver.exe";
-			}else{
+			} else {
 				CHROME_DRIVER = this.homeLocation + "/chromedriverMac";
 			}
-			
 			IE_DRIVER = this.homeLocation + "/IEDriverServer.exe";
 			// Select browser type
 
 			if (this.browserType.equalsIgnoreCase("Firefox")) {
-				driver = getFirefoxDriver();				
+				driver = getFirefoxDriver();
 			} else if (this.browserType.equalsIgnoreCase("Chrome")) {
 				System.setProperty("webdriver.chrome.driver", CHROME_DRIVER);
 				ChromeOptions options = new ChromeOptions();
@@ -163,32 +179,23 @@ public class PlayerTest extends ColumnFixture {
 			} else if (this.browserType.equalsIgnoreCase("IE")) {
 				System.setProperty("webdriver.ie.driver", IE_DRIVER);
 				// Avoid Protected Mode error
-				DesiredCapabilities caps = DesiredCapabilities
-						.internetExplorer();
+				DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
 				caps.setJavascriptEnabled(true);
 				caps.setPlatform(Platform.WINDOWS);
-				caps.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING,
-						true);
-				caps.setCapability(
-						InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING,
-						false);
-				caps.setCapability(
-						InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,
-						true);
+				caps.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
+				caps.setCapability(InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING, false);
+				caps.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 				// caps.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS,
 				// true);
 				caps.setCapability("natvieEvents", true);
-				caps.setCapability(InternetExplorerDriver.FORCE_CREATE_PROCESS,
-						true);
-				caps.setCapability(
-						InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
+				caps.setCapability(InternetExplorerDriver.FORCE_CREATE_PROCESS, true);
+				caps.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
 				driver = new InternetExplorerDriver(caps);
-			} else{
+			} else {
 				driver = new SafariDriver();
 			}
 
-			driver.manage().timeouts()
-					.pageLoadTimeout(PAGE_TIME, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(PAGE_TIME, TimeUnit.SECONDS);
 			// Maximize browser size
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -214,12 +221,32 @@ public class PlayerTest extends ColumnFixture {
 		return true;
 	}
 
+	/**
+	 * test steps.
+	 * 1. Navigate to http://www.thescore.com
+	 * 
+	 * 2. Verify the URL is correct
+	 * 
+	 * 3. Click on the main menu button
+	 * 
+	 * 4. Click on ¡°EPL Soccer¡±
+	 * 
+	 * 5. Click on ¡°Leaders¡±
+	 * 
+	 * 6. Click on a random player
+	 * 
+	 * 7. Verify that the height and birthdate display correctly (fields exist,
+	 * proper format, etc)
+	 * 
+	 * @return
+	 * @throws InterruptedException
+	 */
+
 	public boolean playerInfoValid() throws InterruptedException {
 		ArrayList<String> playerInfo = new ArrayList();
 		mainPage = new MainPage();
 		eplSoccer = new EPLSoccer();
-		isMainPageURLCurrect = mainPage.urlValid(driver,
-				"http://www.thescore.com/trending");
+		isMainPageURLCurrect = mainPage.urlValid(driver, "http://www.thescore.com/trending");
 		mainPage.clickMainMenu(driver);
 		helper.sleep(2000);
 		mainPage.chooseSport(driver, sport);
@@ -231,41 +258,53 @@ public class PlayerTest extends ColumnFixture {
 		playerInfo = eplSoccer.getPlayerInfo(driver);
 		this.isPlayerInfomationExist = playerInfo.size() > 2;
 		log.info(playerInfo);
-
 		String height = playerInfo.get(0).split("/")[0].trim();
 		String birthday = playerInfo.get(1).split("\\(")[0].trim();
 		log.info("birthday:" + birthday);
-		this.isPlayerHeightFormatRight = (eplSoccer
-				.playerHeightvalidation(height));
-		this.isPlayerBirthdayFormatRight = (eplSoccer
-				.playerBirthdayvalidation(birthday));
+		this.isPlayerHeightFormatRight = (eplSoccer.playerHeightvalidation(height));
+		this.isPlayerBirthdayFormatRight = (eplSoccer.playerBirthdayvalidation(birthday));
 		helper.sleep(2000);
 		log.info(" test end without error");
 		return true;
 	}
-
+    /**
+     * close browser
+     * @return
+     */
 	public boolean close() {
 		driver.close();
 		driver.quit();
 		return true;
 	}
+	/**
+	 * URL check
+	 * @return
+	 */
+	public Boolean isMainPageURLCurrect() {
+		return this.isMainPageURLCurrect;
 
+	}
+	/**
+	 * player information exist?
+	 * @return
+	 */
 	public Boolean isPlayerInfomationExist() {
 		return this.isPlayerInfomationExist;
 	}
-
+	/**
+	 * player height format check
+	 * @return
+	 */
 	public Boolean isPlayerHeightFormatRight() {
 		return this.isPlayerHeightFormatRight;
 
 	}
-
+	/**
+	 * player birthday format check
+	 * @return
+	 */
 	public Boolean isPlayerBirthdayFormatRight() {
 		return this.isPlayerBirthdayFormatRight;
-
-	}
-
-	public Boolean isMainPageURLCurrect() {
-		return this.isMainPageURLCurrect;
 
 	}
 
@@ -280,32 +319,28 @@ public class PlayerTest extends ColumnFixture {
 		FirefoxProfile fxProfile = new FirefoxProfile(profileDir);
 		return new FirefoxDriver(fxProfile);
 	}
-
+	
 	public static void main(String[] args) throws Exception {
 		Logger log = Logger.getRootLogger();
 		// "firefox", "IE", "Chrome"
-		String[] jsonStrings = new String[] { "safari" ,"Chrome"};
+		String[] jsonStrings = new String[] { "Chrome" };
 		for (int i = 0; i < jsonStrings.length; i++) {
 			log.info("theScore testing begining");
 			PlayerTest fixture = new PlayerTest();
 			fixture.setTestEnv(THESCORE);
 			fixture.setSport("EPL Soccer");
-			// fixture.setHomeLocation("c:\\workspace\\DemoTest");
-			fixture.setHomeLocation("/Users/jiangliu/Documents/workspace/theScore");
+			fixture.setHomeLocation("c:\\workspace\\DemoTest");
+			// fixture.setHomeLocation("/Users/jiangliu/Documents/workspace/theScore");
 			fixture.setBrowserType(jsonStrings[i]);
-			fixture.setTestPlatform("Mac");
+			fixture.setTestPlatform("windows");
 			fixture.setMainPageURL("http://www.thescore.com/trending");
 			fixture.setup();
 			fixture.playerInfoValid();
 			fixture.tearDown();
-			log.info("is main page URL correct ?   "
-					+ fixture.isMainPageURLCurrect());
-			log.info("is player inforamtion exist ? : "
-					+ fixture.isPlayerInfomationExist());
-			log.info("is player's height format right ? : "
-					+ fixture.isPlayerHeightFormatRight());
-			log.info("is player's birthday format right ? : "
-					+ fixture.isPlayerBirthdayFormatRight());
+			log.info("is main page URL correct ?   " + fixture.isMainPageURLCurrect());
+			log.info("is player inforamtion exist ? : " + fixture.isPlayerInfomationExist());
+			log.info("is player's height format right ? : " + fixture.isPlayerHeightFormatRight());
+			log.info("is player's birthday format right ? : " + fixture.isPlayerBirthdayFormatRight());
 
 		}
 	}

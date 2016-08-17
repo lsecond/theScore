@@ -22,8 +22,7 @@ public class EPLSoccer {
 	private HelperUtility helper;
 
 	/**
-	 * click Leadbutton
-	 * 
+	 * click Lead button	  
 	 * @param driver
 	 */
 	public void clickLeaders(WebDriver driver) {
@@ -33,18 +32,20 @@ public class EPLSoccer {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", leadersElement);
 	}
-
+	/**
+	 * randomly choose a leader player and click.
+	 * @param driver
+	 * @param browser
+	 * @throws InterruptedException
+	 */
 	public void clickLeaderRandom(WebDriver driver, String browser) throws InterruptedException {
 		ArrayList<WebElement> leaderElements = (ArrayList<WebElement>) (new WebDriverWait(driver, 60))
 				.until(ExpectedConditions
 						.presenceOfAllElementsLocatedBy(By.xpath("//ul[@class='list-view leaders-list']/li")));
-		int i = ThreadLocalRandom.current().nextInt(1, leaderElements.size());
-		
+		int i = ThreadLocalRandom.current().nextInt(1, leaderElements.size());		
 		if (browser.equalsIgnoreCase("chrome")) {
-			leaderElements.get(i).click();
-			
-		} else {
-			
+			leaderElements.get(i).click();			
+		} else {			
 			WebElement RandomLeader = driver.findElement(
 					By.xpath("//ul[@class='list-view leaders-list']/li[" + i + "]/a/div/div[2]/div[1]/div[1]"));
 			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", RandomLeader);
@@ -52,18 +53,13 @@ public class EPLSoccer {
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", RandomLeader);
 		}
-
 	}
 
 	/**
-	 * 
+	 * get information for players and return as a ArrayList
 	 * @param driver
 	 * @return
 	 */
-
-	// *[@id="ember979"]/div/div[2]/img
-	// *[@id="ember972"]/div/div[2]/img
-
 	public ArrayList<String> getPlayerInfo(WebDriver driver) {
 		ArrayList<String> playerInfo = new ArrayList();
 		ArrayList<WebElement> playerInfoElements = (ArrayList<WebElement>) (new WebDriverWait(driver, 60))
@@ -75,7 +71,11 @@ public class EPLSoccer {
 		return playerInfo;
 	}
 
-	// 5' 9" / 149 lbs, 1989-03-16 (27), Middlesex, England
+	/**
+	 * player height format check 
+	 * @param height
+	 * @return
+	 */
 	public Boolean playerHeightvalidation(String height) {
 		Boolean valid = true;
 		String pattern = "^(\\d{1,7})\'((\\s?)([0-9]|(1[0-1]))\")?$";
@@ -83,7 +83,11 @@ public class EPLSoccer {
 		valid = height.matches(pattern);
 		return valid;
 	}
-
+	/**
+	 * player birthday format check 
+	 * @param birthday
+	 * @return
+	 */
 	public Boolean playerBirthdayvalidation(String birthday) {
 		log.info(birthday);
 		Boolean valid = true;
