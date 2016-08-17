@@ -97,7 +97,7 @@ public class EPLSoccer {
 		log.info(birthday);
 		Boolean valid = true;
 		String pattern = "^((19|20)\\d\\d)-(0?[1-9]|1[012])-(0?[1-9]|[12][0-9]|3[01])$";
-		valid = "1985-10-24".matches(pattern);
+		valid = birthday.matches(pattern);
 		return valid;
 	}
 

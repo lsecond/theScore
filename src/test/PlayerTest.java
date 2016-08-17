@@ -332,7 +332,7 @@ public class PlayerTest extends ColumnFixture {
 			PlayerTest fixture = new PlayerTest();
 			fixture.setTestEnv(THESCORE);
 			fixture.setSport("EPL Soccer");
-			fixture.setHomeLocation("c:\\workspace\\DemoTest");
+			fixture.setHomeLocation("c:\\workspace\\theScore");
 			// in mac should like : fixture.setHomeLocation("/Users/jiangliu/Documents/workspace/theScore");
 			fixture.setBrowserType(jsonStrings[i]);
 			fixture.setTestPlatform("windows");
