@@ -2,6 +2,12 @@ package modules;
 
 import fit.ColumnFixture;
 
+
+/**
+ * for Fitnesse setup. 
+ * @author Owner
+ *
+ */
 public class SystemProperties extends ColumnFixture {
 	private String key;
 	private String chromeDriver;

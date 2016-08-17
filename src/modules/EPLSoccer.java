@@ -16,7 +16,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 //import autoitx4java.AutoItX;
 import utility.HelperUtility;
-
+/**
+ * EPL page function test.
+ * @author Owner
+ *
+ */
 public class EPLSoccer {
 	public Logger log = Logger.getRootLogger();
 	private HelperUtility helper;
@@ -42,7 +46,8 @@ public class EPLSoccer {
 		ArrayList<WebElement> leaderElements = (ArrayList<WebElement>) (new WebDriverWait(driver, 60))
 				.until(ExpectedConditions
 						.presenceOfAllElementsLocatedBy(By.xpath("//ul[@class='list-view leaders-list']/li")));
-		int i = ThreadLocalRandom.current().nextInt(1, leaderElements.size());		
+		int i = ThreadLocalRandom.current().nextInt(1, leaderElements.size());	
+		// base on different browser, IE and Firefox use javascript perform click();
 		if (browser.equalsIgnoreCase("chrome")) {
 			leaderElements.get(i).click();			
 		} else {			

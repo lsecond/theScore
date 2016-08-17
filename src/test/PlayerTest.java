@@ -28,8 +28,11 @@ import fit.ColumnFixture;
  * @author John L
  * @version 1.0
  * @since 08/17/2016
- * 
- *        theScore QA Automation Challenge
+ *      
+ * this is main 
+ * setup environment, run the test, close browser.  
+ * @author Owner
+ *
  */
 public class PlayerTest extends ColumnFixture {
 
@@ -323,14 +326,14 @@ public class PlayerTest extends ColumnFixture {
 	public static void main(String[] args) throws Exception {
 		Logger log = Logger.getRootLogger();
 		// "firefox", "IE", "Chrome"
-		String[] jsonStrings = new String[] { "Chrome" };
+		String[] jsonStrings = new String[] { "Chrome" };// can add more browsers inside array.
 		for (int i = 0; i < jsonStrings.length; i++) {
 			log.info("theScore testing begining");
 			PlayerTest fixture = new PlayerTest();
 			fixture.setTestEnv(THESCORE);
 			fixture.setSport("EPL Soccer");
 			fixture.setHomeLocation("c:\\workspace\\DemoTest");
-			// fixture.setHomeLocation("/Users/jiangliu/Documents/workspace/theScore");
+			// in mac should like : fixture.setHomeLocation("/Users/jiangliu/Documents/workspace/theScore");
 			fixture.setBrowserType(jsonStrings[i]);
 			fixture.setTestPlatform("windows");
 			fixture.setMainPageURL("http://www.thescore.com/trending");

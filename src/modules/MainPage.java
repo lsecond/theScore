@@ -11,8 +11,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 //import autoitx4java.AutoItX;
 import utility.HelperUtility;
-
-
+/**
+ * main page function test
+ * @author Owner
+ *
+ */
 public class MainPage {
 	public Logger log = Logger.getRootLogger();
 	private HelperUtility helper;
