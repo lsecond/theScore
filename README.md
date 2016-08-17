@@ -11,3 +11,5 @@ Main test script located on: project folder/src/test/PlayerTest.java
 <br>2.	fixture.setHomeLocation("c:\\workspace\\DemoTest"); // project location. 
 <br>3.	fixture.setTestPlatform("windows"); // platform, “windows” or “mac”. 
 
+For more details, can check from doc/index.html or read comments. 
+
