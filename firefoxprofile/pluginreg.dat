@@ -1,0 +1,414 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version|0.17|$
+Arch|x86-msvc|$
+
+[PLUGINS]
+npqtplugin.dll|$
+C:\Program Files (x86)\QuickTime\Plugins\npqtplugin.dll|$
+7.7.5.0|$
+1408330402617|0|0|0|$
+The QuickTime Plugin allows you to view a wide variety of multimedia content in Web pages. For more information, visit the <A HREF=http://www.apple.com/quicktime/>QuickTime</A> Web site.|$
+QuickTime Plug-in 7.7.5|$
+7
+0|application/sdp|SDP stream descriptor|sdp|$
+1|application/x-sdp|SDP stream descriptor|sdp|$
+2|application/x-rtsp|RTSP stream descriptor|rtsp,rts|$
+3|video/quicktime|QuickTime Movie|mov,qt,mqv|$
+4|video/flc|AutoDesk Animator (FLC)|flc,fli,cel|$
+5|audio/x-wav|WAVE audio|wav,bwf|$
+6|audio/wav|WAVE audio|wav,bwf|$
+npqtplugin2.dll|$
+C:\Program Files (x86)\QuickTime\Plugins\npqtplugin2.dll|$
+7.7.5.0|$
+1408330403018|0|0|0|$
+The QuickTime Plugin allows you to view a wide variety of multimedia content in Web pages. For more information, visit the <A HREF=http://www.apple.com/quicktime/>QuickTime</A> Web site.|$
+QuickTime Plug-in 7.7.5|$
+8
+0|audio/aiff|AIFF audio|aiff,aif,aifc,cdda|$
+1|audio/x-aiff|AIFF audio|aiff,aif,aifc,cdda|$
+2|audio/basic|uLaw/AU audio|au,snd,ulw|$
+3|audio/mid|MIDI|mid,midi,smf,kar|$
+4|audio/vnd.qcelp|QUALCOMM PureVoice audio|qcp|$
+5|audio/x-gsm|GSM audio|gsm|$
+6|audio/amr|AMR audio|AMR|$
+7|audio/aac|AAC audio|aac,adts|$
+npqtplugin3.dll|$
+C:\Program Files (x86)\QuickTime\Plugins\npqtplugin3.dll|$
+7.7.5.0|$
+1408330403279|0|0|0|$
+The QuickTime Plugin allows you to view a wide variety of multimedia content in Web pages. For more information, visit the <A HREF=http://www.apple.com/quicktime/>QuickTime</A> Web site.|$
+QuickTime Plug-in 7.7.5|$
+5
+0|audio/x-aac|AAC audio|aac,adts|$
+1|audio/x-caf|CAF audio|caf|$
+2|audio/x-ac3|AC3 audio|ac3|$
+3|video/x-mpeg|MPEG media|mpeg,mpg,m1s,m1v,m1a,m75,m15,mp2,mpm,mpv,mpa|$
+4|video/mpeg|MPEG media|mpeg,mpg,m1s,m1v,m1a,m75,m15,mp2,mpm,mpv,mpa|$
+npqtplugin4.dll|$
+C:\Program Files (x86)\QuickTime\Plugins\npqtplugin4.dll|$
+7.7.5.0|$
+1408330403559|0|0|0|$
+The QuickTime Plugin allows you to view a wide variety of multimedia content in Web pages. For more information, visit the <A HREF=http://www.apple.com/quicktime/>QuickTime</A> Web site.|$
+QuickTime Plug-in 7.7.5|$
+7
+0|audio/mpeg|MPEG audio|mpeg,mpg,m1s,m1a,mp2,mpm,mpa,m2a|$
+1|audio/x-mpeg|MPEG audio|mpeg,mpg,m1s,m1a,mp2,mpm,mpa,m2a|$
+2|video/3gpp|3GPP media|3gp,3gpp|$
+3|audio/3gpp|3GPP media|3gp,3gpp|$
+4|video/3gpp2|3GPP2 media|3g2,3gp2|$
+5|audio/3gpp2|3GPP2 media|3g2,3gp2|$
+6|video/sd-video|SD video|sdv|$
+npqtplugin5.dll|$
+C:\Program Files (x86)\QuickTime\Plugins\npqtplugin5.dll|$
+7.7.5.0|$
+1408330404246|0|0|0|$
+The QuickTime Plugin allows you to view a wide variety of multimedia content in Web pages. For more information, visit the <A HREF=http://www.apple.com/quicktime/>QuickTime</A> Web site.|$
+QuickTime Plug-in 7.7.5|$
+7
+0|application/x-mpeg|AMC media|amc|$
+1|video/mp4|MPEG-4 media|mp4|$
+2|audio/mp4|MPEG-4 media|mp4|$
+3|audio/x-m4a|AAC audio|m4a|$
+4|audio/x-m4p|AAC audio (protected)|m4p|$
+5|audio/x-m4b|AAC audio book|m4b|$
+6|video/x-m4v|Video (protected)|m4v|$
+nppdf32.dll|$
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AIR\nppdf32.dll|$
+15.17.20050.61080|$
+1467287740000|0|0|0|$
+Adobe PDF Plug-In For Firefox and Netscape 15.17.20050|$
+Adobe Acrobat|$
+7
+0|application/pdf|Acrobat Portable Document Format|pdf|$
+1|application/vnd.adobe.pdfxml|Adobe PDF in XML Format|pdfxml|$
+2|application/vnd.adobe.x-mars|Adobe PDF in XML Format|mars|$
+3|application/vnd.fdf|Acrobat Forms Data Format|fdf|$
+4|application/vnd.adobe.xfdf|XML Version of Acrobat Forms Data Format|xfdf|$
+5|application/vnd.adobe.xdp+xml| Acrobat XML Data Package|xdp|$
+6|application/vnd.adobe.xfd+xml|Adobe FormFlow99 Data File|xfd|$
+npvlc.dll|$
+C:\Program Files (x86)\VideoLAN\VLC\npvlc.dll|$
+2.0.6.0|$
+1370640090000|0|0|0|$
+VLC media player Web Plugin 2.0.6|$
+VLC Web Plugin|$
+44
+0|audio/mpeg|MPEG audio|mp2,mp3,mpga,mpega|$
+1|audio/x-mpeg|MPEG audio|mp2,mp3,mpga,mpega|$
+2|video/mpeg|MPEG video|mpg,mpeg,mpe|$
+3|video/x-mpeg|MPEG video|mpg,mpeg,mpe|$
+4|video/mpeg-system|MPEG video|mpg,mpeg,mpe,vob|$
+5|video/x-mpeg-system|MPEG video|mpg,mpeg,mpe,vob|$
+6|audio/mp4|MPEG-4 audio|aac,mp4,mpg4|$
+7|audio/x-m4a|MPEG-4 audio|m4a|$
+8|video/mp4|MPEG-4 video|mp4,mpg4|$
+9|application/mpeg4-iod|MPEG-4 video|mp4,mpg4|$
+10|application/mpeg4-muxcodetable|MPEG-4 video|mp4,mpg4|$
+11|video/x-m4v|MPEG-4 video|m4v|$
+12|video/x-msvideo|AVI video|avi|$
+13|application/ogg|Ogg stream|ogg|$
+14|video/ogg|Ogg video|ogv|$
+15|application/x-ogg|Ogg stream|ogg|$
+16|application/x-vlc-plugin|VLC plug-in||$
+17|video/x-ms-asf-plugin|Windows Media Video|asf,asx|$
+18|video/x-ms-asf|Windows Media Video|asf,asx|$
+19|application/x-mplayer2|Windows Media||$
+20|video/x-ms-wmv|Windows Media|wmv|$
+21|video/x-ms-wvx|Windows Media Video|wvx|$
+22|audio/x-ms-wma|Windows Media Audio|wma|$
+23|application/x-google-vlc-plugin|Google VLC plug-in||$
+24|audio/wav|WAV audio|wav|$
+25|audio/x-wav|WAV audio|wav|$
+26|audio/3gpp|3GPP audio|3gp,3gpp|$
+27|video/3gpp|3GPP video|3gp,3gpp|$
+28|audio/3gpp2|3GPP2 audio|3g2,3gpp2|$
+29|video/3gpp2|3GPP2 video|3g2,3gpp2|$
+30|video/divx|DivX video|divx|$
+31|video/flv|FLV video|flv|$
+32|video/x-flv|FLV video|flv|$
+33|application/x-matroska|Matroska video|mkv|$
+34|video/x-matroska|Matroska video|mkv|$
+35|audio/x-matroska|Matroska audio|mka|$
+36|application/xspf+xml|Playlist xspf|xspf|$
+37|audio/x-mpegurl|MPEG audio|m3u|$
+38|video/webm|WebM video|webm|$
+39|audio/webm|WebM audio|webm|$
+40|application/vnd.rn-realmedia|Real Media File|rm|$
+41|audio/x-realaudio|Real Media Audio|ra|$
+42|audio/amr|AMR audio|amr|$
+43|audio/x-flac|FLAC audio|flac|$
+npGoogleUpdate3.dll|$
+C:\Program Files (x86)\Google\Update\1.3.31.5\npGoogleUpdate3.dll|$
+1.3.31.5|$
+1469878343820|0|0|0|$
+Google Update|$
+Google Update|$
+2
+0|application/x-vnd.google.update3webcontrol.3|||$
+1|application/x-vnd.google.oneclickctrl.9|||$
+nptxftnWebKit.dll|$
+C:\Program Files (x86)\QQMailPlugin\nptxftnWebKit.dll|$
+1.0.0.4|$
+1365408134000|0|0|0|$
+Tencent FTN plug-in|$
+Tencent FTN plug-in|$
+1
+0|application/txftn-webkit|nptxftn||$
+npQQMailWebKit.dll|$
+C:\Program Files (x86)\QQMailPlugin\npQQMailWebKit.dll|$
+1.0.0.22|$
+1366877940000|0|0|0|$
+QQMail plugin for WebKit #1.0.0.22|$
+QQMail Plugin|$
+2
+0|application/x-tencent-qmail-webkit|QQMailPlugin for webkit||$
+1|application/x-tencent-qmail|QQMailPlugin for webkit||$
+npSSOAxCtrlForPTLogin.dll|$
+C:\Program Files (x86)\Common Files\Tencent\TXSSO\1.2.4.1\Bin\npSSOAxCtrlForPTLogin.dll|$
+1.0.1.16|$
+1448941046000|0|0|0|$
+QQ QuickLogin Helper|$
+Tencent SSO Platform|$
+1
+0|application/nptxsso|TXSSO||$
+npQzoneMusic.dll|$
+C:\Program Files (x86)\Tencent\QQMusic\QzoneMusic\npQzoneMusic.dll|$
+9.51.3079.830|$
+1409378120000|0|0|0|$
+QQMusic|$
+QQMusic|$
+1
+0|application/tecent-qzonemusic-plugin|This plug-in is transfers of QzoneMusic when opening Qzone in a web page with Firefox.|rts|$
+npQQPhotoDrawEx.dll|$
+C:\Program Files (x86)\Tencent\Qzone\Ver_254.426\npQQPhotoDrawEx.dll|$
+2.54.426.723|$
+1406084698000|0|0|0|$
+npQQPhotoDrawEx Module|$
+npQQPhotoDrawEx|$
+1
+0|application/tencent-qqphotodrawex2-plugin||rts|$
+npXFMiniDLPlugin.dll|$
+C:\Program Files (x86)\Common Files\Tencent\QQMiniDL\60\Browser\npXFMiniDLPlugin.dll|$
+1.4.50.400|$
+1398413128000|0|0|0|$
+QQMiniDL Plugin|$
+QQMiniDL Plugin|$
+1
+0|application/npxf-qqminidl|npXFPlug|dll|$
+npactivex.dll|$
+C:\Program Files (x86)\Common Files\Tencent\Npchrome\npactivex.dll|$
+6.0.1.1|$
+1456105222959|0|0|0|$
+Tencent QQ CPHelper plugin for Chrome|$
+Tencent QQ|$
+1
+0|application/qscall-plugin|DLL|dll|$
+npnv3dv.dll|$
+C:\Program Files (x86)\NVIDIA Corporation\3D Vision\npnv3dv.dll|$
+7.17.13.1269|$
+1382999914000|0|0|0|$
+NVIDIA 3D Vision plugin for Mozilla browsers|$
+NVIDIA 3D Vision|$
+3
+0|image/jps|JPEG-based stereo image|jps|$
+1|image/pns|PNG-based stereo image|pns|$
+2|image/mpo|Multi-Picture Format image|mpo|$
+npnv3dvstreaming.dll|$
+C:\Program Files (x86)\NVIDIA Corporation\3D Vision\npnv3dvstreaming.dll|$
+7.17.13.1269|$
+1382999914000|0|0|0|$
+NVIDIA 3D Vision Streaming plugin for Mozilla browsers|$
+NVIDIA 3D VISION|$
+1
+0|application/mozilla-3dv-streaming-plugin|npnv3dvstreaming|rts|$
+NPWLPG.dll|$
+C:\Program Files (x86)\Windows Live\Photo Gallery\NPWLPG.dll|$
+16.4.3528.331|$
+1396319658000|0|0|0|$
+NPWLPG|$
+Photo Gallery|$
+2
+0|application/x-wlpg3-detect|Photo Gallery|wlpg|$
+1|application/x-wlpg-detect|Photo Gallery|wlpg|$
+NPAUTHZ.DLL|$
+C:\PROGRA~2\MICROS~1\Office14\NPAUTHZ.DLL|$
+14.0.4730.1010|$
+1263091338000|0|0|0|$
+Office Authorization plug-in for NPAPI browsers|$
+Microsoft Office 2010|$
+1
+0|application/x-msoffice14|14.0.4730.1010|*|$
+NPSPWRAP.DLL|$
+C:\PROGRA~2\MICROS~1\Office14\NPSPWRAP.DLL|$
+14.0.4761.1000|$
+1269480158000|0|0|0|$
+The plug-in allows you to open and edit files using Microsoft Office applications|$
+Microsoft Office 2010|$
+1
+0|application/x-sharepoint|SharePoint Plug-in for Firefox||$
+npIntelWebAPIIPT.dll|$
+C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT\npIntelWebAPIIPT.dll|$
+3.0.72.0|$
+1368476104000|0|0|0|$
+|$
+|$
+1
+0|application/x-vnd-intel-webapi-ipt-3.0.72|npIntelWebAPIipt-2-0||$
+npIntelWebAPIUpdater.dll|$
+C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT\npIntelWebAPIUpdater.dll|$
+3.0.72.0|$
+1368476104000|0|0|0|$
+Intel web components updater - Installs and updates the Intel web components|$
+|$
+1
+0|application/x-vnd-intel-webapi-updater|npIntelWebAPIupdater-2-0|intel_webapi_updater-2-0|$
+npGrabWord.dll|$
+C:\Program Files (x86)\Kingsoft\PowerWordDict\plugin\NPAPI\npGrabWord.dll|$
+1.0.0.1|$
+1384270705595|0|0|0|$
+金山词霸取词插件|$
+金山词霸取词插件|$
+1
+0|application/ciba-grabword-plugin||*|$
+NPCMBEdit.dll|$
+C:\Windows\system32\NPCMBEdit.dll|$
+1.0.0.2|$
+1340806824000|0|0|0|$
+China Merchants Bank Edit|$
+CMBEdit Plugin|$
+1
+0|application/x-cmbedit|cmbedit||$
+npxbdsetup.dll|$
+C:\Windows\Downloaded Program Files\1819127\npxbdsetup.dll|$
+1.38.0.0|$
+1356507256000|0|0|0|$
+BaiduSetUp Plugin|$
+BaiduSetUp Plugin|$
+1
+0|application/baidusetup-activex|ActiveX|ocx|$
+npxbdcntb.dll|$
+C:\Program Files (x86)\Baidu\BaiduPinyin\3.4.2717.9\npxbdcntb.dll|$
+1.38.0.0|$
+1467935434329|0|0|0|$
+BaiduSetUp Plugin|$
+BaiduSetUp Plugin|$
+1
+0|application/baiducnff-activex|ActiveX|ocx|$
+npBDExNP.dll|$
+C:\Users\Owner\AppData\Roaming\Baidu\BDWebAdapter\3.0.359.0\npBDExNP.dll|$
+3.0.359.0|$
+1470846448565|0|0|0|$
+百度网页启动组件|$
+百度网页启动组件|$
+1
+0|application/baiduexpert-npplugin|||$
+NPComBrg701.dll|$
+C:\Windows\system32\itruscert\NPComBrg701.dll|$
+1.0.2011.701|$
+1311580152000|0|0|0|$
+iTrusPTA&XEnroll hwPTA,IEnroll,UKeyInstalls for FireFox,version=1.0.0.2|$
+iTrusChina iTrusPTA,XEnroll,iEnroll,hwPTA,UKeyInstalls Firefox Plugin|$
+6
+0|application/pta.itruspta.version.1|PTA|*|$
+1|application/cenroll.cenroll.version.1|CEnroll||$
+2|application/itrusenroll.certenroll.version.1|IEnroll||$
+3|application/hwpta.itrushwpta|hwPTA||$
+4|application/hwwdkey.installwdkey|hwWDkey||$
+5|application/hwepass2001.installepass2001|HwEpass2001||$
+npaliedit.dll|$
+C:\Program Files (x86)\alipay\aliedit\5.3.0.3807\npaliedit.dll|$
+1.3.0.2|$
+1404391014000|0|0|0|$
+npaliedit|$
+Alipay security control|$
+1
+0|application/aliedit|npaliedit| |$
+npalidcp.dll|$
+C:\Program Files (x86)\alipay\aliedit\5.3.0.3807\npalidcp.dll|$
+1.0.0.1|$
+1404391014000|0|0|0|$
+npalidcp|$
+Alipay webmod control|$
+1
+0|application/alidcp|npalidcp| |$
+npalicdo.dll|$
+C:\Program Files (x86)\alipay\aliedit\5.3.0.3807\npalicdo.dll|$
+1.0.0.4|$
+1427099716000|0|0|0|$
+npalicdo|$
+npalicdo plugin|$
+1
+0|application/npalicdo|npalicdo|dll|$
+npAlipaydhc.dll|$
+C:\Program Files (x86)\alipay\aliedit\5.3.0.3807\npAlipaydhc.dll|$
+1.0.6.0|$
+1427099718000|0|0|0|$
+Alipay Internet Health Control|$
+Alipay Security Payment Client Suit|$
+1
+0|application/x-aliinethealth-plugin|npAliInetHealth.dll|*|$
+npAliSecCtrl.dll|$
+C:\Program Files (x86)\alipay\aliedit\5.3.0.3807\npAliSecCtrl.dll|$
+2.0.2.0|$
+1427099720000|0|0|0|$
+Alipay Security Control|$
+Alipay Security Control 3|$
+1
+0|application/x-alisecctrl-plugin|npAliSecCtrl.dll|*|$
+npaosmgr.dll|$
+C:\Program Files (x86)\AhnLab\ASP\Components\aosmgr\npaosmgr.dll|$
+2.2.0.13|$
+1414627276000|0|0|0|$
+Aosmgr Plugin Module|$
+AhnLab Online Security|$
+2
+0|application/ahnlab.asp.npaosmgr.1|||$
+1|application/ahnlab/asp/npaosmgr.1|||$
+NPSWF32_20_0_0_235.dll|$
+C:\Windows\SysWOW64\Macromed\Flash\NPSWF32_20_0_0_235.dll|$
+20.0.0.235|$
+1449843193728|0|0|0|$
+Shockwave Flash 20.0 r0|$
+Shockwave Flash|$
+2
+0|application/x-shockwave-flash|Adobe Flash movie|swf|$
+1|application/futuresplash|FutureSplash movie|spl|$
+npGatewayNpapi.dll|$
+C:\Users\Owner\AppData\Local\SkypePlugin\7.17.0.44\npGatewayNpapi.dll|$
+7.17.0.44|$
+1459461700000|0|0|0|$
+Skype Web Plugin 7.17.0.44|$
+Skype Web Plugin|$
+2
+0|application/x-skype-nativeplugin7.0|||$
+1|application/x-skype-shellapp|||$
+npalicdo.dll|$
+C:\Users\Owner\AppData\Roaming\alipay\cf\npalicdo.dll|$
+1.0.0.4|$
+1409716928000|0|0|0|$
+npalicdo|$
+npalicdo plugin|$
+1
+0|application/npalicdo|npalicdo|dll|$
+npqqwebgame.dll|$
+C:\Users\Owner\AppData\Roaming\Tencent\WebGamePlugin\1.0.4.3\npqqwebgame.dll|$
+1.0.4.3|$
+1445322560000|0|0|0|$
+QQWebGamePlugin Pro|$
+QQGamePlugin Pro|$
+1
+0|application/npqqwebgame|QQWebGamePlugin Pro|rts|$
+
+[INVALID]
+C:\Windows\system32\npmproxy.dll|$
+1247534171654|$
+C:\Program Files (x86)\alipay\aliedit\5.3.0.3807\npalicdo64.dll|$
+1427099718000|$
+C:\Program Files (x86)\alipay\aliedit\5.3.0.3807\npAlipaydhc64.dll|$
+1427099720000|$
+C:\Program Files (x86)\alipay\aliedit\5.3.0.3807\npAliSecCtrl64.dll|$
+1427099720000|$
+C:\Users\Owner\AppData\Local\SkypePlugin\7.17.0.44\npGatewayNpapi-x64.dll|$
+1459461700000|$
