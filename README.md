@@ -1,6 +1,6 @@
 # theScore
 
-This project was written by java and selenium web driver. 
+This Eclipse project was written by java and selenium web driver. 
 
 Tested on 
 windows: Chrome(64 bit, 52.0.2743.116), Firefox(46.0.1) and IE(11.0.34) 
