@@ -65,7 +65,7 @@ public class EPLSoccer {
 	// *[@id="ember972"]/div/div[2]/img
 
 	public ArrayList<String> getPlayerInfo(WebDriver driver) {
-		ArrayList<String> playerInfo = new ArrayList<>();
+		ArrayList<String> playerInfo = new ArrayList();
 		ArrayList<WebElement> playerInfoElements = (ArrayList<WebElement>) (new WebDriverWait(driver, 60))
 				.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.className("info-segment-data")));
 		for (int i = 0; i < playerInfoElements.size(); i++) {
