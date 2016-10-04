@@ -166,6 +166,7 @@ public class PlayerTest extends ColumnFixture {
 				CHROME_DRIVER = this.homeLocation + "/chromedriver.exe";
 			} else {
 				CHROME_DRIVER = this.homeLocation + "/chromedriverMac";
+			//	CHROME_DRIVER = "/users/jliu/git/theScore/chromedriverMac";
 			}
 			IE_DRIVER = this.homeLocation + "/IEDriverServer.exe";
 			// Select browser type
@@ -232,9 +233,9 @@ public class PlayerTest extends ColumnFixture {
 	 * 
 	 * 3. Click on the main menu button
 	 * 
-	 * 4. Click on ¡°EPL Soccer¡±
+	 * 4. Click on ï¿½ï¿½EPL Soccerï¿½ï¿½
 	 * 
-	 * 5. Click on ¡°Leaders¡±
+	 * 5. Click on ï¿½ï¿½Leadersï¿½ï¿½
 	 * 
 	 * 6. Click on a random player
 	 * 
@@ -332,10 +333,10 @@ public class PlayerTest extends ColumnFixture {
 			PlayerTest fixture = new PlayerTest();
 			fixture.setTestEnv(THESCORE);
 			fixture.setSport("EPL Soccer");
-			fixture.setHomeLocation("c:\\workspace\\theScore");
+			fixture.setHomeLocation("/Users/jliu/git/theScore");
 			// in mac should like : fixture.setHomeLocation("/Users/jiangliu/Documents/workspace/theScore");
 			fixture.setBrowserType(jsonStrings[i]);
-			fixture.setTestPlatform("windows");
+			fixture.setTestPlatform("Mac");
 			fixture.setMainPageURL("http://www.thescore.com/trending");
 			fixture.setup();
 			fixture.playerInfoValid();
