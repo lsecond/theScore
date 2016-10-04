@@ -179,6 +179,7 @@ public class PlayerTest extends ColumnFixture {
 				options.addArguments("--test-type");
 				driver = new ChromeDriver(options);
 
+				
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			} else if (this.browserType.equalsIgnoreCase("IE")) {
 				System.setProperty("webdriver.ie.driver", IE_DRIVER);

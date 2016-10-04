@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160618</FitNesseVersion>
+  <rootPath>DemoTest</rootPath>
+    <result>
+    <counts>
+      <right>9</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2016-10-04T10:37:40-04:00</date>
+    <runTimeInMillis>21388</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;h1&gt;Score player TEST&lt;/h1&gt;
+&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;h2&gt;Test Desc.&lt;/h2&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt; 1. Navigate to &lt;a href="http://www.thescore.com"&gt;http://www.thescore.com&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;2. Verify the URL is correct&lt;br/&gt;&lt;br/&gt;3. Click on the main menu button&lt;br/&gt;&lt;br/&gt;4. Click on “EPL Soccer”&lt;br/&gt;&lt;br/&gt;5. Click on “Leaders”&lt;br/&gt;&lt;br/&gt;6. Click on a random player&lt;br/&gt;&lt;br/&gt;7. Verify that the height and birthdate display correctly (fields exist, proper format, etc)&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;div class="collapsible invisible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;TestSystem&lt;a title="create page" href="TestSystem?edit&amp;amp;nonExistent=true"&gt;[?]&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible invisible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Classpath&lt;/p&gt;
+	&lt;div&gt;&lt;span class="meta"&gt;variable defined: home=/users/jliu/git/theScore&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: library=${home}/lib&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: IEdriver=${home}/IEDriverServer.exe&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: chromedriver=${home}/chromedriverMac&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;classpath: /users/jliu/git/theScore&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: /users/jliu/git/theScore/bin/&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: /users/jliu/git/theScore/firefoxprofile/&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: /users/jliu/git/theScore/IEDriverServer.exe&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: /users/jliu/git/theScore/*.properties&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: /users/jliu/git/theScore/lib/*.jar&lt;/span&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;modules.SystemProperties&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;key&lt;/td&gt;
+		&lt;td&gt;ChromeDriver&lt;/td&gt;
+		&lt;td&gt;setChromeKey?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;webdriver.Chrome.driver&lt;/td&gt;
+		&lt;td&gt;/users/jliu/git/theScore/chromedriverMac&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;/users/jliu/git/theScore/chromedriverMac&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="13"&gt;&lt;span class="pass"&gt;test.PlayerTest&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;testEnv&lt;/td&gt;
+		&lt;td&gt;browserType&lt;/td&gt;
+		&lt;td&gt;homeLocation&lt;/td&gt;
+		&lt;td&gt;mainPageURL&lt;/td&gt;
+		&lt;td&gt;sport&lt;/td&gt;
+		&lt;td&gt;testPlatform&lt;/td&gt;
+		&lt;td&gt;setup?&lt;/td&gt;
+		&lt;td&gt;playerInfoValid?&lt;/td&gt;
+		&lt;td&gt;isMainPageURLCurrect?&lt;/td&gt;
+		&lt;td&gt;isPlayerInfomationExist?&lt;/td&gt;
+		&lt;td&gt;isPlayerHeightFormatRight?&lt;/td&gt;
+		&lt;td&gt;isPlayerHeightFormatRight?&lt;/td&gt;
+		&lt;td&gt;close?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;http://www.thescore.com&lt;/td&gt;
+		&lt;td&gt;Chrome&lt;/td&gt;
+		&lt;td&gt;/users/jliu/git/theScore/&lt;/td&gt;
+		&lt;td&gt;http://www.thescore.com/trending&lt;/td&gt;
+		&lt;td&gt;EPL Soccer&lt;/td&gt;
+		&lt;td&gt;Mac&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;test.PlayerTest&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;tearDown?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</content>
+    <relativePageName>DemoTest</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_0', instruction='make', instanceName='decisionTable_0', className='modules.SystemProperties', args=[]}</instruction>
+        <slimResult>pass(modules.SystemProperties)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_0_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>modules.SystemProperties</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_4', instruction='call', instanceName='decisionTable_0', methodName='setKey', args=[webdriver.Chrome.driver]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_5', instruction='call', instanceName='decisionTable_0', methodName='setChromeDriver', args=[/users/jliu/git/theScore/chromedriverMac]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_0_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_7', instruction='call', instanceName='decisionTable_0', methodName='setChromeKey', args=[]}</instruction>
+        <slimResult>pass(/users/jliu/git/theScore/chromedriverMac)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_0_7</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>/users/jliu/git/theScore/chromedriverMac</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='test.PlayerTest', args=[]}</instruction>
+        <slimResult>pass(test.PlayerTest)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>test.PlayerTest</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setTestEnv', args=[http://www.thescore.com]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setBrowserType', args=[Chrome]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setHomeLocation', args=[/users/jliu/git/theScore/]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='setMainPageURL', args=[http://www.thescore.com/trending]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_7</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='setSport', args=[EPL Soccer]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_9', instruction='call', instanceName='decisionTable_1', methodName='setTestPlatform', args=[Mac]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_9</instructionId>
+                    <col>5</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='setup', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>6</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='playerInfoValid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_12</instructionId>
+                    <col>7</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_13', instruction='call', instanceName='decisionTable_1', methodName='isMainPageURLCurrect', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_13</instructionId>
+                    <col>8</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='isPlayerInfomationExist', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_14</instructionId>
+                    <col>9</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_15', instruction='call', instanceName='decisionTable_1', methodName='isPlayerHeightFormatRight', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_15</instructionId>
+                    <col>10</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='isPlayerHeightFormatRight', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>11</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_17', instruction='call', instanceName='decisionTable_1', methodName='close', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_17</instructionId>
+                    <col>12</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_0', instruction='make', instanceName='decisionTable_2', className='test.PlayerTest', args=[]}</instruction>
+        <slimResult>pass(test.PlayerTest)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_2_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>test.PlayerTest</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_5', instruction='call', instanceName='decisionTable_2', methodName='tearDown', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_2_5</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp /Users/jliu/Desktop/work/fitnesse.jar:/users/jliu/git/theScore:/users/jliu/git/theScore/bin/:/users/jliu/git/theScore/firefoxprofile/:/users/jliu/git/theScore/IEDriverServer.exe:/users/jliu/git/theScore/lib/cglib-nodep-3.2.4.jar:/users/jliu/git/theScore/lib/commons-codec-1.10.jar:/users/jliu/git/theScore/lib/commons-exec-1.3.jar:/users/jliu/git/theScore/lib/commons-logging-1.2.jar:/users/jliu/git/theScore/lib/fitnesse-standalone.jar:/users/jliu/git/theScore/lib/gson-2.3.1.jar:/users/jliu/git/theScore/lib/guava-19.0.jar:/users/jliu/git/theScore/lib/hamcrest-core-1.3.jar:/users/jliu/git/theScore/lib/hamcrest-library-1.3.jar:/users/jliu/git/theScore/lib/httpclient-4.5.2.jar:/users/jliu/git/theScore/lib/httpcore-4.4.4.jar:/users/jliu/git/theScore/lib/httpmime-4.5.2.jar:/users/jliu/git/theScore/lib/jna-4.1.0.jar:/users/jliu/git/theScore/lib/jna-platform-4.1.0.jar:/users/jliu/git/theScore/lib/junit-4.12.jar:/users/jliu/git/theScore/lib/log4j-1.2.17.jar:/users/jliu/git/theScore/lib/netty-3.5.7.Final.jar:/users/jliu/git/theScore/lib/phantomjsdriver-1.2.1.jar:/users/jliu/git/theScore/lib/selenium-java-2.53.1-srcs.jar:/users/jliu/git/theScore/lib/selenium-java-2.53.1.jar:/users/jliu/git/theScore/lib/selenium-server-standalone-2.53.1.jar fitnesse.slim.SlimService 8085</command>
+    <exitCode>0</exitCode>
+    <stdOut>| 2016-10-04 10:37:40,313 | PlayerTest                     | 75     | INFO  | - test env : http://www.thescore.com
+| 2016-10-04 10:37:40,317 | PlayerTest                     | 86     | INFO  | - Chrome
+| 2016-10-04 10:37:40,317 | PlayerTest                     | 114    | INFO  | - http://www.thescore.com/trending
+| 2016-10-04 10:37:40,317 | PlayerTest                     | 124    | INFO  | - EPL Soccer
+| 2016-10-04 10:37:40,317 | PlayerTest                     | 161    | INFO  | - test begin
+| 2016-10-04 10:37:42,008 | PlayerTest                     | 206    | INFO  | - -----test begin----
+| 2016-10-04 10:37:45,236 | PlayerTest                     | 224    | INFO  | -  setup done
+| 2016-10-04 10:37:47,835 | MainPage                       | 58     | INFO  | - EPL Soccer
+| 2016-10-04 10:37:59,433 | PlayerTest                     | 264    | INFO  | - [5' 7" / 160 lbs, 1988-05-10 (28), St Albans, England]
+| 2016-10-04 10:37:59,434 | PlayerTest                     | 267    | INFO  | - birthday:1988-05-10
+| 2016-10-04 10:37:59,434 | EPLSoccer                      | 97     | INFO  | - 1988-05-10
+| 2016-10-04 10:38:01,439 | PlayerTest                     | 271    | INFO  | -  test end without error
+</stdOut>
+    <stdErr>Starting ChromeDriver (v2.9.248307) on port 16428
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>21911</totalRunTimeInMillis>
+</testResults>
+
